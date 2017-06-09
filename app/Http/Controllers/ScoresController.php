@@ -27,7 +27,7 @@ class ScoresController extends Controller
                     'materia'=>$value->materia,
                     'ejercicio'=>$value->ejercicio,
                     'score'=>$value->score,
-                    'fecalta'=>$value->created_at,
+                    'fecalta'=>$value->created_at
                 ));
         }
 
@@ -64,7 +64,6 @@ class ScoresController extends Controller
     public function show($id)
     {
         //
-                //
         $scores = Score::where('idusuario',$id)->get();
         $aux = array();
         foreach ($scores as $key => $value) {
@@ -73,9 +72,10 @@ class ScoresController extends Controller
                     'materia'=>$value->materia,
                     'ejercicio'=>$value->ejercicio,
                     'score'=>$value->score,
-                    'fecalta'=>$value->created_at,
+                    'fecalta'=>$value->created_at
                 ));
         }
+        
 
         return response()->json(['status'=>0,'scores'=>$scores]);
     }

@@ -55,10 +55,5 @@ class Kernel extends HttpKernel
         
         'jwt-auth' => \App\Http\Middleware\authJWT::class,
         'cors' => \Barryvdh\Cors\HandleCors::class,
-      
-        'admin' => \App\Http\Middleware\RedirectIfNotAdmin::class,
-        'soporte' => \App\Http\Middleware\RedirectIfNotSoporte::class,
-        'jefe' => \App\Http\Middleware\RedirectIfNotJefe::class,
-        'user' => \App\Http\Middleware\RedirectIfNotUser::class,
     ];
 }

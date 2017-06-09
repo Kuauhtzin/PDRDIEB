@@ -216,8 +216,6 @@ return [
         'Notify' => Andheiberg\Notify\Facades\Notify::class,
 
         /* Owner Aliases */
-        'Helpers' => App\Libraries\Helpers::class,
-
         'Carbon' => Carbon\Carbon::class,
 
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class

@@ -7,8 +7,6 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-  <link rel="icon" href="{{asset('abrasivos-austromex.ico')}}">
-
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="{{asset('plugins/bootstrap-3.3.6/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
@@ -50,15 +48,7 @@
           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
         <div class="row">
-          <!--
-          <div class="col-xs-12 text-center">
-            <div class="checkbox icheck">
-              <label>
-                <input type="checkbox"> Remember Me
-              </label>
-            </div>
-          </div>
-          -->
+
           <!-- /.col -->
           <div class="col-xs-8 col-xs-offset-2">
             <button type="submit" class="btn btn-primary btn-block btn-flat trigger-loader">Entrar</button>
@@ -68,7 +58,7 @@
       </form>
 
     </div>
-    <!-- /.login-box-body -->
+    <!-- /.login-box-body -->       
   </div>
   <!-- /.login-box -->
 <!-- ./wrapper -->
