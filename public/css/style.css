@@ -1,0 +1,142 @@
+/** Header **/
+.navbar-nav > .user-menu > .dropdown-menu {
+  width: auto !important;
+}
+
+/** Loader **/
+.loader-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1031;
+  background: rgba(255, 255, 255, 0.8);
+}
+.loader-container > .fa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  color: #000;
+  font-size: 30px;
+  margin-left: -40px;
+}
+
+/** Hidden **/
+.hidden{
+  visibility: hidden;
+}
+
+/** Link Color - Class black**/ 
+.black,
+.black:hover,
+.black:active,
+.black:link,
+.black:visited{
+  color: black;
+}
+/** Table - Color Ajust **/
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #E2E2E2;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #BCBCBC;
+  cursor: pointer;
+}
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3 {
+  background: rgba(0,0,0,.1);
+}
+table.dataTable.order-column thead tr > .sorting_asc,
+table.dataTable.order-column thead tr > .sorting_desc{
+  background: #00c0ef;
+  border-color: #00acd6;
+  color: #000000;
+}
+table tbody tr > .col-striped {
+  background: rgba(0,0,0,.1);
+}
+
+
+.vcenter {
+    vertical-align: middle !important;
+}
+
+/** Abrasivos Especiales **/
+.ae-header{
+  background-color: #264f96 !important;
+}
+.ae-color{
+  color: #264f96 !important;
+}
+
+/** Austromex **/
+.aa-header{
+  background-color: #b11f16 !important;
+}
+.aa-color{
+  color: #b11f16 !important;
+}
+
+/** Tenazit **/
+.at-header{
+  background-color: #5b9927 !important;
+}
+.at-color{
+  color: #5b9927 !important;
+}
+
+/** header color **/
+.ae-header,.aa-header,.at-header{
+  color: #ffffff !important;
+}
+
+
+/** LOADER **/
+  .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay2{
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+  }
+  .overlay2 > .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    color: #000;
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .img-loader {
+    background-image: url("http://192.168.35.5/abrasivos-austromex.png");
+    background-repeat: no-repeat;
+    width: auto; /*or your image's width*/
+    height: auto; /*or your image's height*/
+    margin: 0;
+    padding: 0;
+  }
+
+/*
+.content-wrapper,
+.main-footer {
+  margin-left: 0px !important;
+
+}
+*/
+
+/** header img user **/
+.img-xs{
+  width: 18px !important;
+  height: 18px !important;
+}

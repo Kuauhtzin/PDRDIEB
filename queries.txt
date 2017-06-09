@@ -1,0 +1,16 @@
+
+
+SELECT distinct a.perord, numemp,oriord,numjef FROM ordenes as a INNER JOIN (select perord,MAX(fecalta) as fecalta FROM ordenes GROUP BY perord) as b ON a.fecalta=b.fecalta AND a.perord=b.perord ORDER BY oriord,numemp
+
+
+SELECT c.numemp,c.nomusr,c.email,c.empresa,sub.oriord,sub.numjef FROM correo as c INNER JOIN (select DISTINCT o.perord,o.numemp,o.oriord,o.numjef FROM ordenes as o INNER JOIN (select perord,MAX(fecalta) as fecalta FROM ordenes GROUP BY perord ) as maxfec ON o.fecalta=maxfec.fecalta AND o.perord=maxfec.perord ) as sub ON c.nomusr=sub.perord WHERE sub.oriord!=0 ORDER BY c.numemp
+
+
+SELECT distinct numemp,a.perord,oriord,numjef FROM ordenes as a INNER JOIN (select perord,MAX(fecalta) as fecalta FROM ordenes GROUP BY perord) as b ON a.fecalta=b.fecalta AND a.perord=b.perord ORDER BY numemp
+
+
+SELECT c.numemp,c.nomusr,c.email,c.empresa,sub.numjef,sub.depto,sub.nomdep FROM correo as c INNER JOIN (select DISTINCT o.perord,o.numemp,o.oriord,o.numjef,o.depto,o.nomdep FROM ordenes as o INNER JOIN (select perord,MAX(fecalta) as fecalta FROM ordenes GROUP BY perord ) as maxfec ON o.fecalta=maxfec.fecalta AND o.perord=maxfec.perord ) as sub ON c.nomusr=sub.perord WHERE sub.oriord!=0 ORDER BY c.numemp
+
+
+// 135 usuarios
+SELECT c.numemp,c.nomusr,c.email,c.empresa,sub.oriord,sub.numjef FROM correo as c INNER JOIN (select DISTINCT o.perord,o.numemp,o.oriord,o.numjef FROM ordenes as o INNER JOIN (select perord,MAX(fecalta) as fecalta FROM ordenes GROUP BY perord ) as maxfec ON o.fecalta=maxfec.fecalta AND o.perord=maxfec.perord) as sub ON c.nomusr=sub.perord WHERE sub.oriord!=0 ORDER BY c.numemp
